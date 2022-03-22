@@ -1,0 +1,64 @@
+body{
+    background: linear-gradient(to left,#343a40,#121416) ;
+}
+
+.header-container{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.title{
+    color: white;
+}
+
+.bio-pic{
+    width: 225px;
+    height: 225px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.bio-content{
+    color: #9ea5ac;
+    position: relative;
+    margin: 25px 0px;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25em; 
+    border-right: 2px solid #aaaaaa;
+    font-size: 150%;
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: typewriter 7s steps(50) 2s 1 normal both, blinkTextCursor .3s steps(40) 18 normal forwards;
+}
+
+@keyframes shift{
+    from{
+      background-position: 0 20%;
+    }
+    
+    to{
+      background-position: 100% 30%;
+    }
+  }
+  
+  @keyframes typewriter{
+    from{
+      width: 0;
+    }
+    to{
+      width: 18em;
+    }
+  }
+  
+  @keyframes blinkTextCursor{
+    from{
+      border-right-color: #403f3e;
+    }
+    to{
+      border-right-color: transparent;
+    }
+  }
