@@ -56,6 +56,34 @@ i{
     box-shadow: 0px 0px 2px 3px #aaaaaa;
 }
 
+.container{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.sub-container{
+    padding: 25px;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .sub-container{
+        min-width: 100%;
+    }
+}
+
+.sub-title{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes shift{
     from{
       background-position: 0 20%;
