@@ -1,3 +1,6 @@
+//Resume Download
+
+//Quotes
 const quoteBtn = document.getElementById("quoteBtn");
 const quoteAPIURL = "https://type.fit/api/quotes";
 
