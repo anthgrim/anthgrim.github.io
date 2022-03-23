@@ -41,15 +41,19 @@ body{
 }
 
 .btn{
-    color: white ;
+    color: white;
     background-color: #121416;
     transition: 0.5s ease-in-out;
+}
+
+i{
+    color: white;
 }
 
 .btn:hover{
     transform: scale(1.05);
     color: white;
-    box-shadow: 0px 0px 3px 3px #e0e1dd;
+    box-shadow: 0px 0px 2px 3px #aaaaaa;
 }
 
 @keyframes shift{
