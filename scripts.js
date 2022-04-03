@@ -5,24 +5,25 @@ const quoteBtn = document.getElementById("quoteBtn");
 const quoteAPIURL = "https://type.fit/api/quotes";
 
 const randomNum = (scale) => {
-    const ran = Math.floor(Math.random() * scale);
-    return ran;
-}
+  const ran = Math.floor(Math.random() * scale);
+  return ran;
+};
 
-function getQuote () {
-    fetch(quoteAPIURL)
-        .then((res) => {
-            return res.json()
-        })
-        .then((data) => {
-            const info = data;
-            const index = randomNum(info.length)
-            alert(`${info[index].text} - ${info[index].author}`)
-        })
-        .catch((error) => {
-            alert("Something went wrong :(")
-            console.log(error)
-        })
-}
+const getQuote = async () => {
+  const res = await fetch(quoteAPIURL);
+  const data = await res.json();
+  return data;
+};
 
-quoteBtn.addEventListener('click',getQuote);
+const alertQuote = async () => {
+  try {
+    const quotes = await getQuote();
+    const index = randomNum(quotes.length);
+    const quote = `${quotes[index].text} - ${quotes[index].author}`;
+    alert(quote);
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+quoteBtn.addEventListener("click", alertQuote);

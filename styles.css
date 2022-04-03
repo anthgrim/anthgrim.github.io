@@ -1,113 +1,132 @@
-body{
-    background: linear-gradient(to left,#343a40,#121416) ;
+body {
+  background: linear-gradient(to left, #343a40, #121416);
 }
 
-.header-container{
-    width: auto;
-    height: auto;
-    margin: 10px;
-    text-align: center;
+.header-container {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  text-align: center;
 }
 
-.title{
-    color: white;
+.title {
+  color: white;
 }
 
-.bio-pic{
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-    transition: 0.5s ease-in-out;
+.bio-pic {
+  width: 225px;
+  height: 225px;
+  border-radius: 50%;
+  transition: 0.5s ease-in-out;
 }
 
-.bio-pic:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 3px 4px #e0e1dd;
+.bio-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 3px 4px #e0e1dd;
 }
 
-.bio-content{
-    color: #9ea5ac;
-    position: relative;
-    margin: 25px 0px;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 25em; 
-    border-right: 2px solid #aaaaaa;
-    font-size: 150%;
-    white-space: nowrap;
-    overflow: hidden; 
-    animation: typewriter 7s steps(50) 2s 1 normal both, blinkTextCursor .3s steps(40) 18 normal forwards;
+.bio-content {
+  color: #9ea5ac;
+  position: relative;
+  margin: 25px 0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25em;
+  border-right: 2px solid #aaaaaa;
+  font-size: 150%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 7s steps(50) 2s 1 normal both,
+    blinkTextCursor 0.3s steps(40) 18 normal forwards;
 }
 
-.btn{
-    color: white;
-    background-color: #121416;
-    transition: 0.5s ease-in-out;
+.btn {
+  color: white;
+  background-color: #121416;
+  transition: 0.5s ease-in-out;
 }
 
-i{
-    color: white;
+i {
+  color: white;
 }
 
-.btn:hover{
-    transform: scale(1.05);
-    color: white;
-    box-shadow: 0px 0px 2px 3px #aaaaaa;
+.btn:hover {
+  transform: scale(1.05);
+  color: white;
+  box-shadow: 0px 0px 2px 3px #aaaaaa;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    color: white;
+.container {
+  display: flex;
+  flex-direction: row;
+  color: white;
 }
 
-.sub-container{
-    padding: 25px;
-    min-width: 50%;
-    max-width: 50%;
+.sub-container {
+  border-radius: 15px;
+  margin: 15px;
+  padding: 25px;
+  min-width: 50%;
+  max-width: 50%;
+  background-color: rgba(34, 34, 34, 0.65);
 }
 
 @media only screen and (max-width: 800px) {
-    .container{
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 
-    .sub-container{
-        min-width: 100%;
-    }
+  .sub-container {
+    max-width: 100%;
+  }
 }
 
-.sub-title{
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
+.sub-title {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes shift{
-    from{
-      background-position: 0 20%;
-    }
-    
-    to{
-      background-position: 100% 30%;
-    }
+.card-group {
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 15px;
+}
+
+.card-img-top {
+  width: 300px;
+}
+
+@keyframes shift {
+  from {
+    background-position: 0 20%;
   }
-  
-  @keyframes typewriter{
-    from{
-      width: 0;
-    }
-    to{
-      width: 18em;
-    }
+
+  to {
+    background-position: 100% 30%;
   }
-  
-  @keyframes blinkTextCursor{
-    from{
-      border-right-color: #403f3e;
-    }
-    to{
-      border-right-color: transparent;
-    }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
   }
+  to {
+    width: 18em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #403f3e;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
