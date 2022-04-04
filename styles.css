@@ -1,5 +1,17 @@
 body {
+  margin: 2;
+  padding: 0;
   background: linear-gradient(to left, #343a40, #121416);
+}
+
+.particle {
+  z-index: -100;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  opacity: 0.1;
+  transition: 0.5s ease-in-out;
 }
 
 .header-container {
@@ -10,6 +22,7 @@ body {
 }
 
 .title {
+  z-index: 2;
   color: white;
 }
 
