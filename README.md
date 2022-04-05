@@ -13,7 +13,7 @@ Deploy portfolio project using GitHub Pages
 
 Implement React components and add more user interaction
 
-### GitHub Deployment: **[www.anthgrimk.dev](anthgrimk.dev)**
+### GitHub Deployment: **[www.anthgrimk.dev](https://anthgrimk.dev/)**
 
 ### Credits
 
