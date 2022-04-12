@@ -111,11 +111,15 @@ i.quote {
 
 .content-row {
   text-align: center;
-  margin: 15px;
+  margin: auto;
   padding: 15px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: auto;
   justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-between;
+  align-items: center;
 }
 
 .card-img-top {
@@ -135,6 +139,10 @@ i.quote {
 
 .btn-blue {
   background-color: #023e8a;
+}
+
+.btn-green {
+  background-color: #2a9d8f;
 }
 
 @keyframes shift {
@@ -175,6 +183,7 @@ i.quote {
   }
 
   .content-row {
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     flex-direction: column;
   }
