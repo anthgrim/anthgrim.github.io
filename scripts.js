@@ -48,7 +48,7 @@ const resetParticles = () => {
 };
 
 const animateParticles = () => {
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 50; i++) {
     generateParticles();
   }
 };
@@ -57,3 +57,30 @@ setInterval(() => {
   resetParticles();
   animateParticles();
 }, 100);
+
+//Uncollapsed on click
+let collapsed = document.getElementsByClassName("collapsed-content");
+let collapser = document.querySelectorAll("#collapser");
+
+for (let i = 0; i < collapser.length; i++) {
+  collapser[i].addEventListener("click", () => {
+    if (window.innerWidth <= 1000) {
+      collapsed[i].classList.toggle("collapse");
+    }
+  });
+}
+
+//MediaQuery-like function for collapsables
+const resizeCollapsables = () => {
+  let windowWidth = window.innerWidth;
+  for (let i = 0; i < collapsed.length; i++) {
+    if (windowWidth > 1000) {
+      collapsed[i].classList.remove("collapse");
+    } else {
+      collapsed[i].classList.add("collapse");
+    }
+  }
+};
+
+window.onresize = resizeCollapsables;
+window.onload = resizeCollapsables;
