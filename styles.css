@@ -102,6 +102,10 @@ i.quote {
   transition: 0.5s ease-in-out;
 }
 
+.sub-container:hover {
+  background-color: #1d3557;
+}
+
 .sub-container-small {
   text-align: center;
   border-radius: 15px;
@@ -113,6 +117,10 @@ i.quote {
   transition: 0.5s ease-in-out;
 }
 
+.sub-container-small:hover {
+  background-color: #1d3557;
+}
+
 .sub-title {
   font-weight: bold;
   display: flex;
@@ -121,6 +129,15 @@ i.quote {
 
 .collapse {
   overflow: visible;
+}
+
+#collapser {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+#collapser:hover {
+  transform: scale(1.05);
 }
 
 .lst {
@@ -210,20 +227,6 @@ i.quote {
 
   .sub-container {
     max-width: 100%;
-    transition: 0.5s ease-in-out;
-  }
-
-  .sub-container:hover {
-    background-color: #1d3557;
-  }
-
-  #collapser {
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-  }
-
-  #collapser:hover {
-    transform: scale(1.05);
   }
 
   .collapse {
@@ -233,11 +236,6 @@ i.quote {
   .sub-container-small {
     max-width: 100%;
     text-align: center;
-    transition: 0.5s ease-in-out;
-  }
-
-  .sub-container-small:hover {
-    background-color: #1d3557;
   }
 
   .content-row {
