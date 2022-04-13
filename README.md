@@ -2,19 +2,35 @@
 
 ## Description
 
-This is the final project of Part 1 of the MIT - Full Stack Development with Mern
+This is my personal web portfolio where I showcase my web development abilities.
 
-## Objectives
+## Current Implementations
 
-Create a web dev portfolio using Bootstrap, HTML, CSS and JavaScript
-Deploy portfolio project using GitHub Pages
+### JavaScript
 
-### Future Implementations
+- Animated Background with JavaScript
+- Media Query - like function for collapsables in JavaScript
+- Fetch API for Inspirational Quotes
+- Async and await keyboards
 
-Implement React components and add more user interaction
+### Styles
 
-### GitHub Deployment: **[www.anthgrimk.dev](https://anthgrimk.dev/)**
+- Media Query for smaller screens
+- Animated Key Frames in styles.css
+- Boostrap: NavBar and Cards
+- Grid Display in Projects.html
+- Embedded Resume
 
-### Credits
+## Future Implementations
 
-Saturn.png icon taken from **[Muhammad Ali](https://www.flaticon.com/authors/muhammad-ali)**
+- Implement React components
+- Add more user interaction
+- Make transition of collapsables smoother with JavaScript
+
+## GitHub Deployment
+
+**[www.anthgrimk.dev](https://anthgrimk.dev/)**
+
+## Credits
+
+Saturn.png icon taken from **[Muhammad Ali - flaticon.com](https://www.flaticon.com/authors/muhammad-ali)**

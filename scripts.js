@@ -58,7 +58,7 @@ setInterval(() => {
   animateParticles();
 }, 100);
 
-//Uncollapsed on click
+//Toggle Collapse on click
 let collapsed = document.getElementsByClassName("collapsed-content");
 let collapser = document.querySelectorAll("#collapser");
 
