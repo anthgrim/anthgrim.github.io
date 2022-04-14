@@ -56,6 +56,7 @@ body {
 
 .btn {
   color: white;
+  text-align: center;
   background-color: #121416;
   transition: 0.5s ease-in-out;
 }

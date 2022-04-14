@@ -82,5 +82,25 @@ const resizeCollapsables = () => {
   }
 };
 
-window.onresize = resizeCollapsables;
-window.onload = resizeCollapsables;
+//Remove titles
+let btntitles = document.getElementsByClassName("btn-values");
+let btnValuesArray = ["Inspiration", "GitHub", "LinkedIn", "Resume", "Email"];
+
+const addRemoveBtnTitles = () => {
+  let windowWidth = window.innerWidth;
+  for (let i = 0; i < btntitles.length; i++) {
+    if (windowWidth > 1000) {
+      btntitles[i].innerHTML = btnValuesArray[i];
+    } else {
+      btntitles[i].innerHTML = "";
+    }
+  }
+};
+
+const initializer = () => {
+  resizeCollapsables();
+  addRemoveBtnTitles();
+};
+
+window.onresize = initializer;
+window.onload = initializer;
