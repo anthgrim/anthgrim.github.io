@@ -81,6 +81,7 @@ i.quote {
 .btn:hover {
   transform: scale(1.05);
   color: white;
+  background-color: #1d3557;
   box-shadow: 0px 0px 2px 3px #aaaaaa;
 }
 
@@ -104,6 +105,7 @@ i.quote {
 
 .sub-container:hover {
   background-color: #1d3557;
+  transform: scale(1.03);
 }
 
 .sub-container-small {
@@ -119,6 +121,7 @@ i.quote {
 
 .sub-container-small:hover {
   background-color: #1d3557;
+  transform: scale(1.03);
 }
 
 .sub-title {
