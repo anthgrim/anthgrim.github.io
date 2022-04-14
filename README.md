@@ -8,8 +8,9 @@ This is my personal web portfolio where I showcase my web development abilities.
 
 ### JavaScript
 
-- Animated Background with JavaScript
-- Media Query - like function for collapsables in JavaScript
+- Animated Background in Header
+- Media Query - like function for collapsables
+- Media Query - like function for button titles
 - Fetch API for Inspirational Quotes
 - Async and await keyboards
 
