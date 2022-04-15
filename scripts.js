@@ -53,7 +53,7 @@ const animateParticles = () => {
 };
 
 //Check client's location to avoid console errors
-if (document.URL.includes("index.html")) {
+if (!document.URL.includes("projects.html")) {
   quoteBtn.addEventListener("click", alertQuote);
   setInterval(() => {
     resetParticles();
