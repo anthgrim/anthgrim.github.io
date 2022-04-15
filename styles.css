@@ -1,7 +1,23 @@
 body {
   margin: 2;
   padding: 0;
-  background: linear-gradient(to left, #343a40, #121416);
+  background: linear-gradient(-45deg, #003049, #000d16, #001524, #15616d);
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+  height: 100vh;
+}
+
+.cursor {
+  z-index: 101;
+  width: 7rem;
+  height: 7rem;
+  border: none;
+  background: radial-gradient(circle closest-side, white, transparent);
+  opacity: 0.1;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .particle {
@@ -196,6 +212,43 @@ i.quote {
   background-color: #2a9d8f;
 }
 
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cursor {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .sub-container {
+    max-width: 100%;
+  }
+
+  .collapse {
+    transition: 0.5s ease-in-out;
+  }
+
+  .sub-container-small {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .content-row {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 15px auto;
+  }
+}
+
+/* Key Frames */
+
 @keyframes shift {
   from {
     background-position: 0 20%;
@@ -224,31 +277,14 @@ i.quote {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .container {
-    flex-direction: column;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-
-  .sub-container {
-    max-width: 100%;
+  50% {
+    background-position: 100% 50%;
   }
-
-  .collapse {
-    transition: 0.5s ease-in-out;
-  }
-
-  .sub-container-small {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .content-row {
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .card {
-    margin: 15px auto;
+  100% {
+    background-position: 0% 50%;
   }
 }

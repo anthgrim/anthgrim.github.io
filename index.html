@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="cursor"></div>
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -46,110 +47,113 @@
     </nav>
 
     <!-- Content -->
-    <div class="header-container" id="header">
-      <h1 class="title">Kevin Grimaldi, Web Dev</h1>
-      <img class="bio-pic" src="./images/Bio.jpg" alt="bio-pic" />
-      <h4 class="bio-content">Web developer, and tech enthusiast.</h4>
-      <div class="btn-group">
-        <button class="btn" id="quoteBtn" title="Get Inspire">
-          <i class="bi bi-quote quote"><span class="btn-values"></span></i>
-        </button>
-        <button class="btn" title="GitHub Profile">
-          <a
-            href="https://github.com/anthgrim"
-            target="_blank"
-            class="btn-title"
-            ><i class="bi bi-github"></i><span class="btn-values"></span></a
-          >
-        </button>
-        <button class="btn" title="LinkedIn Profile">
-          <a
-            href="https://www.linkedin.com/in/kevin-grimaldi-392b44178/"
-            target="_blank"
-            class="btn-title"
-            ><i class="bi bi-linkedin"></i><span class="btn-values"></span></a
-          >
-        </button>
-        <button class="btn" id="downloadBtn" title="Dowload Resume">
-          <a
-            href="./files/Kevin_Grimaldi_Resume.pdf"
-            target="_blank"
-            class="btn-title"
-            ><i class="bi bi-download"></i><span class="btn-values"></span></a
-          >
-        </button>
-        <button class="btn" id="downloadBtn" title="Email me!">
-          <a
-            href="mailto:anthgrim@icloud.com"
-            target="_blank"
-            class="btn-title"
-            ><i class="bi bi-envelope-plus"></i><span class="btn-values"></span></a
-          >
-        </button>
+    <div class="main">
+      <div class="header-container" id="header">
+        <h1 class="title">Kevin Grimaldi, Web Dev</h1>
+        <img class="bio-pic" src="./images/Bio.jpg" alt="bio-pic" />
+        <h4 class="bio-content">Web developer, and tech enthusiast.</h4>
+        <div class="btn-group">
+          <button class="btn" id="quoteBtn" title="Get Inspire">
+            <i class="bi bi-quote quote"><span class="btn-values"></span></i>
+          </button>
+          <button class="btn" title="GitHub Profile">
+            <a
+              href="https://github.com/anthgrim"
+              target="_blank"
+              class="btn-title"
+              ><i class="bi bi-github"></i><span class="btn-values"></span></a
+            >
+          </button>
+          <button class="btn" title="LinkedIn Profile">
+            <a
+              href="https://www.linkedin.com/in/kevin-grimaldi-392b44178/"
+              target="_blank"
+              class="btn-title"
+              ><i class="bi bi-linkedin"></i><span class="btn-values"></span></a
+            >
+          </button>
+          <button class="btn" id="downloadBtn" title="Dowload Resume">
+            <a
+              href="./files/Kevin_Grimaldi_Resume.pdf"
+              target="_blank"
+              class="btn-title"
+              ><i class="bi bi-download"></i><span class="btn-values"></span></a
+            >
+          </button>
+          <button class="btn" id="downloadBtn" title="Email me!">
+            <a
+              href="mailto:anthgrim@icloud.com"
+              target="_blank"
+              class="btn-title"
+              ><i class="bi bi-envelope-plus"></i><span class="btn-values"></span></a
+            >
+          </button>
+        </div>
+      </div>
+  
+      <div class="container">
+        <section class="sub-container">
+          <span class="sub-title" id="collapser">About Me</span>
+          <div class="collapsed-content">
+            <hr />
+            <p>
+              I'm a student in the MIT - Full Stack Development with MERN. I am
+              passionate about programming, new techonologies, and science in
+              general, with a special focus in mathematics and the way this
+              iteration of the Universe is designed. I believe the future is written
+              in binary, and that new coding techonologies will open a lot of
+              opportunities to the world.
+            </p>
+          </div>
+        </section>
+      </div>
+  
+      <div class="container">
+        <section class="sub-container-small">
+          <span class="sub-title" id="collapser">Coding Technologies</span>
+          <div class="collapsed-content">
+          <hr />
+            <p>
+              <ul class="lst">
+                <li>C# - ASP.NET</li>
+                <li>Web Dev - MERN</li>
+                <li>Visual Basics</li>
+                <li>VBA</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <section class="sub-container-small">
+          <span class="sub-title" id="collapser">Designing Softwares</span>
+          <div class="collapsed-content">
+          <hr />
+            <p>
+              <ul class="lst">
+                <li>Figma</li>
+                <li>Adobe XD</li>
+                <li>Canva</li>
+                <li>Draw.io</li>
+              </ul>
+            </p>
+          </div>
+        </section>
+        <section class="sub-container-small">
+          <span class="sub-title" id="collapser">Hobbies</span>
+          <div class="collapsed-content">
+          <hr />
+            <p>
+              <ul class="lst">
+                <li>Hiking</li>
+                <li>Play the guitar</li>
+                <li>Watch Coding videos</li>
+                <li>Learn new random facts</li>
+              </ul>
+            </p>
+          </div>
+        </section>
       </div>
     </div>
-
-    <div class="container">
-      <section class="sub-container">
-        <span class="sub-title" id="collapser">About Me</span>
-        <div class="collapsed-content">
-          <hr />
-          <p>
-            I'm a student in the MIT - Full Stack Development with MERN. I am
-            passionate about programming, new techonologies, and science in
-            general, with a special focus in mathematics and the way this
-            iteration of the Universe is designed. I believe the future is written
-            in binary, and that new coding techonologies will open a lot of
-            opportunities to the world.
-          </p>
-        </div>
-      </section>
-    </div>
-
-    <div class="container">
-      <section class="sub-container-small">
-        <span class="sub-title" id="collapser">Coding Technologies</span>
-        <div class="collapsed-content">
-        <hr />
-          <p>
-            <ul class="lst">
-              <li>C# - ASP.NET</li>
-              <li>Web Dev - MERN</li>
-              <li>Visual Basics</li>
-              <li>VBA</li>
-            </ul>
-          </p>
-        </div>
-      </section>
-      <section class="sub-container-small">
-        <span class="sub-title" id="collapser">Designing Softwares</span>
-        <div class="collapsed-content">
-        <hr />
-          <p>
-            <ul class="lst">
-              <li>Figma</li>
-              <li>Adobe XD</li>
-              <li>Canva</li>
-              <li>Draw.io</li>
-            </ul>
-          </p>
-        </div>
-      </section>
-      <section class="sub-container-small">
-        <span class="sub-title" id="collapser">Hobbies</span>
-        <div class="collapsed-content">
-        <hr />
-          <p>
-            <ul class="lst">
-              <li>Hiking</li>
-              <li>Play the guitar</li>
-              <li>Watch Coding videos</li>
-              <li>Learn new random facts</li>
-            </ul>
-          </p>
-        </div>
-      </section>
-    </div>
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -1,5 +1,6 @@
 let particlesArr = [];
 let header = document.getElementById("header");
+let mainContent = document.getElementsByClassName("main");
 
 //Quotes
 const quoteBtn = document.getElementById("quoteBtn");
@@ -27,8 +28,6 @@ const alertQuote = async () => {
   }
 };
 
-quoteBtn.addEventListener("click", alertQuote);
-
 //Animated background
 const generateParticles = () => {
   let newParticle = document.createElement("div");
@@ -53,10 +52,14 @@ const animateParticles = () => {
   }
 };
 
-setInterval(() => {
-  resetParticles();
-  animateParticles();
-}, 100);
+//Check client's location to avoid console errors
+if (document.URL.includes("index.html")) {
+  quoteBtn.addEventListener("click", alertQuote);
+  setInterval(() => {
+    resetParticles();
+    animateParticles();
+  }, 100);
+}
 
 //Toggle Collapse on click
 let collapsed = document.getElementsByClassName("collapsed-content");
@@ -104,3 +107,13 @@ const initializer = () => {
 
 window.onresize = initializer;
 window.onload = initializer;
+
+//Cursor
+let cursor = document.querySelector(".cursor");
+
+const cursorAnimation = (e) => {
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
+};
+
+window.addEventListener("mousemove", cursorAnimation);
