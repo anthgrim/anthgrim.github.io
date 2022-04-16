@@ -53,7 +53,10 @@ const animateParticles = () => {
 };
 
 //Check client's location to avoid console errors
-if (!document.URL.includes("projects.html")) {
+if (
+  document.URL === "https://anthgrimk.dev/" ||
+  document.URL.includes("index.html")
+) {
   quoteBtn.addEventListener("click", alertQuote);
   setInterval(() => {
     resetParticles();
