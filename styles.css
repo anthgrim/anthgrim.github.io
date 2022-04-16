@@ -247,6 +247,12 @@ i.quote {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
+}
+
 /* Key Frames */
 
 @keyframes shift {
