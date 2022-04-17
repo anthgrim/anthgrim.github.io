@@ -103,19 +103,27 @@ i.quote {
 }
 
 .container {
+  margin: auto;
   display: flex;
   flex-direction: row;
   color: white;
   justify-content: center;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 15px;
+  min-width: 75%;
+  max-width: 75%;
+}
+
 .sub-container {
   text-align: center;
   border-radius: 15px;
-  margin: 15px;
   padding: 25px;
   min-width: 50%;
-  max-width: 75%;
+  max-width: 100%;
   background-color: rgba(34, 34, 34, 0.65);
   transition: 0.5s ease-in-out;
 }
@@ -139,6 +147,18 @@ i.quote {
 .sub-container-small:hover {
   background-color: #1d3557;
   transform: scale(1.03);
+}
+
+.video-container {
+  margin: 15px 0px;
+  width: auto;
+  height: auto;
+}
+
+.video {
+  width: 75%;
+  width: 95%;
+  height: 100%;
 }
 
 .sub-title {
@@ -224,7 +244,7 @@ i.quote {
   }
 
   .sub-container {
-    max-width: 100%;
+    width: 100%;
   }
 
   .collapse {
@@ -233,6 +253,15 @@ i.quote {
 
   .sub-container-small {
     max-width: 100%;
+    text-align: center;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .video-container {
     text-align: center;
   }
 
