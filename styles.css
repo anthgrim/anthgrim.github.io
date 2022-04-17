@@ -34,7 +34,6 @@ body {
 
 .bio-pic:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 3px 4px #e0e1dd;
 }
 
 .bio-content {
@@ -56,7 +55,7 @@ body {
 .btn {
   color: white;
   text-align: center;
-  background-color: #121416;
+  background-color: #042749;
   transition: 0.5s ease-in-out;
 }
 
@@ -81,8 +80,7 @@ i.quote {
 .btn:hover {
   transform: scale(1.05);
   color: white;
-  background-color: #1d3557;
-  box-shadow: 0px 0px 2px 3px #aaaaaa;
+  background-color: #0a3f49;
 }
 
 .container {
@@ -103,32 +101,30 @@ i.quote {
 
 .sub-container {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 25px;
   min-width: 50%;
   max-width: 100%;
-  background-color: rgba(34, 34, 34, 0.9);
   transition: 0.5s ease-in-out;
 }
 
 .sub-container:hover {
-  background-color: #1d3557;
+  background-color: #0a3f49;
   transform: scale(1.03);
 }
 
 .sub-container-small {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 15px;
   padding: 25px;
   min-width: 23.5%;
   max-width: 25%;
-  background-color: rgba(34, 34, 34, 0.9);
   transition: 0.5s ease-in-out;
 }
 
 .sub-container-small:hover {
-  background-color: #1d3557;
+  background-color: #0a3f49;
   transform: scale(1.03);
 }
 
@@ -227,6 +223,8 @@ i.quote {
   }
 
   .sub-container {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     width: 100%;
   }
 
@@ -237,6 +235,8 @@ i.quote {
   .sub-container-small {
     max-width: 100%;
     text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .wrapper {
