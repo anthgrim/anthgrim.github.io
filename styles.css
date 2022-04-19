@@ -55,7 +55,7 @@ body {
 .btn {
   color: white;
   text-align: center;
-  background-color: #042749;
+  background-color: #0b707e46;
   transition: 0.5s ease-in-out;
 }
 
@@ -196,25 +196,32 @@ i.quote {
 
 .card {
   padding: 5px;
-  border-radius: 0%;
+  border-radius: 5px;
   border: none;
-  border-left: 1px solid rgba(255, 255, 255, 0.15);
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.048);
   color: white;
   transition: 0.5s ease-in-out;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  background-color: #0a3f49;
+  transform: scale(1.03);
 }
 
 .btn-blue {
-  background-color: #023e8a;
+  background-color: #043049;
+}
+
+.btn-blue:hover {
+  background-color: #000d16;
 }
 
 .btn-green {
-  background-color: #2a9d8f;
+  background-color: #2a9d64;
+}
+
+.btn-green:hover {
+  background-color: #000d16;
 }
 
 /* Media Queries */
@@ -261,9 +268,6 @@ i.quote {
   }
 
   .card {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     margin: 15px auto;
   }
 }
