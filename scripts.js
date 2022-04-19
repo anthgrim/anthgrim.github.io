@@ -1,6 +1,7 @@
 let particlesArr = [];
 let header = document.getElementById("header");
 let mainContent = document.getElementsByClassName("main");
+let bioPic = document.getElementById("bioPic");
 
 //Quotes
 const quoteBtn = document.getElementById("quoteBtn");
@@ -52,16 +53,25 @@ const animateParticles = () => {
   }
 };
 
+const eventParticles = () => {
+  let animationId = setInterval(() => {
+    resetParticles();
+    animateParticles();
+  }, 100);
+
+  setTimeout(() => {
+    clearInterval(animationId);
+    resetParticles();
+  }, 3000);
+};
+
 //Check client's location to avoid console errors
 if (
   document.URL === "https://anthgrimk.dev/" ||
   document.URL.includes("index.html")
 ) {
   quoteBtn.addEventListener("click", alertQuote);
-  setInterval(() => {
-    resetParticles();
-    animateParticles();
-  }, 100);
+  bioPic.addEventListener("click", eventParticles);
 }
 
 //Toggle Collapse on click
